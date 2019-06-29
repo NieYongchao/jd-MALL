@@ -1,0 +1,354 @@
+.grid {
+  height: 480px;
+}
+.grid a:hover {
+  color: #c81623;
+}
+/*  左侧商品导航列表  */
+.grid-col1 {
+  position: relative;
+  width: 190px;
+  height: 100%;
+  border-top: 1px solid #ccc;
+}
+.ad {
+  position: absolute;
+  left: -250px;
+  top: 10px;
+  width: 250px;
+  height: 480px;
+}
+.ad:hover .ad-r {
+  width: 990px;
+}
+.ad-r {
+  overflow: hidden;
+  position: absolute;
+  left: 250px;
+  top: 10px;
+  width: 0;
+  height: 470px;
+  background: url(../images/ad-r.jpg);
+  transition: all .3s ease;
+  z-index: 99;
+}
+.grid-col1 .cate-menu {
+  padding: 6px 0;
+  height: 468px;
+  background-color: #fefefe;
+  color: #636363;
+  font-size: 12px;
+}
+.cate-menu a {
+  font-size: 14px;
+  color: #636363;
+  transition: color .2s ease;
+}
+.cate-menu .cate-menu-item {
+  overflow: hidden;
+  padding-left: 18px;
+  height: 26px;
+  line-height: 26px;
+}
+.cate-menu-item:hover {
+  background-color: #d9d9d9;
+}
+.cate-menu-line {
+  padding: 0 2px;
+}
+/*  轮播图广告区  */
+.grid-col2 {
+  width: 790px;
+  height: 100%;
+  margin-left: 10px;
+  overflow: hidden;
+}
+.grid-col2 img {
+  vertical-align: top;
+}
+.slider {
+  position: relative;
+  width: 790px;
+  height: 340px;
+  overflow: hidden;
+}
+/*轮播图*/
+.slider-list {
+  width: 3950px;
+  height: 340px;
+  position: absolute;
+  z-index: 1;
+}
+.slider-list img {
+  width: 790px;
+  height: 340px;
+  float: left;
+}
+/* 圆点按钮 */
+.slider .buttons {
+  width: 160px;
+  height: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+  z-index: 2;
+}
+.slider .buttons span {
+  display: block;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #999;
+  margin-right: 15px;
+  float: left;
+}
+/* 按钮点亮时的颜色 */
+.slider .buttons .on {
+  background: orangered;
+}
+/* 前后箭头 */
+.slider .arrow {
+  display: none;
+  width: 30px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, .3);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.slider #next {
+  right: 15px;
+}
+.slider #prev {
+  left: 15px;
+}
+.slider:hover .arrow {
+  display: block;
+}
+.slider .arrow:hover {
+  background: rgba(0, 0, 0, .7);
+}
+.grid-col2-b {
+  width: 790px;
+  height: 130px;
+  margin-top: 10px; 
+}
+/*  右侧个人信息区  */
+.grid-col3 {
+  width: 190px;
+  height: 100%;
+  background-color: #fff;
+}
+/*  用户区  */
+.user {
+  height: 150px;
+  text-align: center;
+}
+.user-inner {
+  position: relative;
+  padding-top: 62px;
+  height: 78px;
+}
+.user-avatar {
+  position: absolute;
+  left: 50%;
+  top: -10px;
+  /* margin-left: -34px; */
+  transform: translateX(-50%);
+  width: 65px;
+  height: 65px;
+}
+.user .user-lk {
+  display: block;
+  border: 5px solid #e3e1df;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 3px 6px 25px #c3c3c3;
+
+}
+.user .user-lk img {
+  border: 0;
+  display: block;
+  width: 55px;
+  height: 55px;
+}
+.user-show {
+  padding: 0 10px;
+}
+.user-show p {
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 20px;
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #888;
+}
+.user-login, .user-reg {
+  padding: 0 2px;
+}
+.user-profit {
+  margin-top: 10px;
+  height: 25px;
+}
+.user-profit a:hover {
+  background-color: #e01222;
+  color: #fff;
+}
+.user-profit-lk {
+  display: inline-block;
+  margin: 0 5px;
+  width: 70px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  color: #e43f3b;
+  border-radius: 13px;
+  box-shadow: 6px 8px 20px rgba(45, 45, 45, .15);
+  transition: background .3s ease,color .3s ease; 
+}
+.user-profit-lk-plus {
+  background: #363634;
+  color: #e5d790;
+}
+/*  新闻区  */
+.news {
+  height: 130px;
+  overflow: hidden;
+}
+.news .news-hd {
+  position: relative;
+  padding: 8px 0 0;
+  line-height: 13px;
+}
+.news .news-tit {
+  display: inline-block;
+  font-size: 13px;
+  margin-left: 15px;
+  color: #1e1e1e;
+}
+.news .news-more {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  font-size: 12px;
+  color: #999;
+}
+.news .news-list {
+  position: relative;
+  padding-top: 8px;
+  margin: 0 15px;
+  height: 88px;
+}
+.news .news-item {
+  line-height: 21px;
+  max-width: 160px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.news .news-link {
+  color: #666;
+}
+.news .news-tag {
+  display: inline-block;
+  font-size: 12px;
+  width: 35px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #fff;
+  background-color: #e47f7f;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+/*  服务区  */
+.grid-col3 .service {
+  position: relative;
+  height: 190px;
+  transition: all .2s ease;
+}
+.grid-col3 .service::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 160px;
+  left: 15px;
+  height: 2px;
+  background: #ebeaea;
+  z-index: 1;
+}
+.service .service-list {
+  overflow: hidden;
+  padding: 18px 11px 11px;
+  height: 165px;
+}
+.service .service-item {
+  position: relative;
+  float: left;
+  width: 42px;
+  height: 55px;
+  text-align: center;
+}
+.service .service-link {
+  position: relative;
+  display: block;
+  padding-top: 6px;
+  transition: all .2s linear;
+}
+.service .service-link i {
+  display: block;
+  margin: 4px auto 0;
+  width: 24px;
+  height: 22px;
+  background: url(../images/sprite_fs@1x.png) no-repeat;
+  background-position: -1px -88px;
+}
+.service .service-item:nth-child(2) i {
+  background-position: -1px -44px;
+}
+.service .service-item:nth-child(3) i {
+  background-position: -45px -88px;
+}
+.service .service-item:nth-child(4) i {
+  background-position: -88px 0;
+}
+.service .service-item:nth-child(5) i {
+  background-position: -89px -43px;
+}
+.service .service-item:nth-child(6) i {
+  background-position: -3px 1px;
+}
+.service .service-item:nth-child(7) i {
+  background-position: -46px -43px;
+}
+.service .service-item:nth-child(8) i {
+  background-position: -89px -88px;
+}
+.service .service-item:nth-child(9) i {
+  background-position: -132px 0;
+}
+.service .service-item:nth-child(10) i {
+  background-position: -132px -45px;
+}
+.service .service-item:nth-child(11) i {
+  background-position: -133px -87px;
+}
+.service .service-item:nth-child(12) i {
+  background-position: -44px -1px;
+}
+.service .service-tag {
+  display: block;
+  height: 25px;
+  line-height: 25px;
+}
